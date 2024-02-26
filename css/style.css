@@ -1,0 +1,157 @@
+
+.cont-padre{
+    position: relative;
+    width: 60%;
+    height: 90vh;
+    margin: 0 auto;
+    background: #aaefee;
+    z-index: 1;
+    animation: pulse 10s infinite;
+    animation-timing-function: ease-out;
+    animation-duration: alternates;
+}
+
+@keyframes pulse {
+    0% {
+      background: url(../img/fondo1.jpg);
+      background-size: cover;
+    }
+    50% {
+      background: url(../img/fondo5.jpg);
+      background-size: cover;
+    }
+    100% {
+        background: url(../img/fondo6.jpg);
+        background-size: cover;
+      }
+
+  }
+
+ .cara{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 250px;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.sombrero{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+    top: 150px;
+    transition: 1s;
+}
+
+.ojo-izq{
+    position: absolute;
+    left: 485px ;
+    top: 320px ;
+    z-index: 4;
+    transition: 1ss;
+}
+
+.ojo-der{
+    position: absolute;
+    right: 485px;
+    top: 320px;
+    z-index: 4;
+    transition: 1s;
+}
+
+.nariz{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 375px;
+    margin: 0 auto;
+    z-index: 5;
+    transition: 1s;
+}
+
+.bigote{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;
+    margin: 0 auto;
+    z-index: 4;
+    transition: 1s;
+}
+
+.oreja-izq{
+    position: absolute;
+    left: 380px;
+    top: 280px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.oreja-der{
+    position: absolute;
+    right: 380px;
+    top: 280px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.pie-izq{
+    position: absolute;
+    left: 425px;
+    top: 600px;
+    z-index: 2;
+    transition: 1s;
+}
+.pie-der{
+    position: absolute;
+    right: 425px;
+    top: 600px;
+    z-index: 2;
+    transition: 1s;
+}
+
+.cont-padre:hover .sombrero{
+    top: 80px;
+}
+
+.cont-padre:hover .oreja-der{
+    right: 500px;
+
+}
+
+.cont-padre:hover .oreja-izq{
+    left: 500px;
+
+}
+
+.cont-padre:hover .ojo-der{
+    rotate: 360deg;
+    transform: scale(1.1);
+}
+
+.cont-padre:hover .ojo-izq{
+    rotate: 360deg;
+    transform: scale(1.1);
+}
+
+.cont-padre:hover .nariz{
+    opacity: 0.5;
+}
+
+.cont-padre:hover .bigote{
+    rotate: 180deg;
+}
+
+.cont-padre:hover .pie-der{
+    right: 350px;
+}
+
+.cont-padre:hover .pie-izq{
+    left: 350px;
+}
+
+
+
